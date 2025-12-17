@@ -114,7 +114,7 @@ def initialize_session_state():
     if "messages" not in st.session_state:
         st.session_state.messages = []
     if "active_category" not in st.session_state:
-        st.session_state.active_category = "Brandville"
+        st.session_state.active_category = "Install Base Insights"
     if "last_full_data" not in st.session_state:
         st.session_state.last_full_data = None
 
@@ -284,3 +284,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
