@@ -258,7 +258,7 @@ def display_main_content():
 
 def display_chat_interface():
     """Manages the chat display and response processing."""
-    st.subheader("Chat with SAM")
+    st.subheader("Chat with MAM")
     
     chat_container = st.container()
     with chat_container:
@@ -284,4 +284,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
