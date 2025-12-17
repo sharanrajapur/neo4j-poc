@@ -142,7 +142,7 @@ def display_sidebar():
             st.session_state.session_id = str(uuid.uuid4())
             st.session_state.messages = []
             st.session_state.last_full_data = None
-            st.experimental_rerun()
+            st.rerun()
         
         st.markdown("---")
         st.markdown("### Raw API Response")
@@ -271,7 +271,7 @@ def display_chat_interface():
     user_input = st.chat_input("Type your question here...")
     if user_input:
         handle_prompt_submission(user_input)
-        st.experimental_rerun()
+        st.rerun()
 
 
 # --- Main App Execution ---
@@ -284,5 +284,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
